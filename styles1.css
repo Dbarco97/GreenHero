@@ -1,0 +1,179 @@
+body{
+    background: url(Images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
+    background-position: center;
+    padding: 0;
+    margin:0;
+    
+
+}
+
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0;
+    position:relative;
+    
+    
+}
+.navbar{
+  background: skyblue ;
+  justify-content: space-between;
+  position: absolute;
+  height: 40px;
+  width: 1600px;
+}
+
+.navbar .menu{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 300px;
+    text-align: center;
+
+}
+
+.navbar .menu  li{
+    background: rgb(236, 209, 53);
+    color:black;
+    width: 80px;
+    height: 20px;
+
+}
+ .navbar .services-menu{
+    background: rgb(15, 216, 216);
+    filter: blur(0.2px);
+    color:black;
+    display: block;
+    position: absolute;
+
+    
+   
+}
+
+.menu li .services-menu li{
+    background: rgba(158, 177, 230, 0.7) ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    color:rgb(5, 5, 5);
+    width: 80px;
+    height: 20px;
+    font-size: 10px;
+    display:none;
+   
+
+}
+.menu li  .services-menu li a{
+    color:black;
+    font-size: 10px;
+    
+}
+
+.menu li .services-menu li a:hover{
+    color:white;
+    background-color: yellowgreen;
+}
+
+.menu li:hover .services-menu li{
+    display:block;
+}
+
+
+
+
+
+body header .Logo{
+width:40px;
+height: 40px;
+position:relative;
+
+}
+.Sustainable-Habits .Learn-More{
+    background: rgb(189, 240, 236);
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.Learn-More a{
+    font-size:15px;
+    font-weight: bold;
+    color:#070707;
+    font-style: italic;
+}
+
+.Sustainable-Habits{
+    background: rgb(110, 229, 238) ;
+    box-shadow: 20px 15px 10px rgba(0,0,0,0.5);
+    color:rgb(232, 240, 236);
+    margin: 2em 0rem;
+    position: absolute;
+    left:5px;
+    padding:0px;
+    bottom: 100px;
+    top:240px;
+}
+
+.Climate-updates h2{
+    color:rgb(233, 233, 220);
+    font-size: 20px;
+}
+
+.Climate-updates .Upcoming{
+    background: rgb(74, 226, 74);
+    border-radius: 20px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 13px;
+    padding-right: 12px;
+    
+    
+
+}
+.Climate-updates .Upcoming a{
+    color: #070707;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+.Climate-updates{
+    background: rgb(110, 229, 238) ;
+    filter:blur(0.3px);
+    box-shadow: 20px 15px 10px rgba(0,0,0,0.5);
+    color:rgb(236, 231, 231);
+    margin:2em 0em;
+    position: absolute;
+    right:5px;
+    padding:0px;
+    bottom: 100px;
+    top:240px;
+    
+   
+    
+    
+}
+.Webside-name{
+    font-size: 40px;
+    color: rgb(229, 255, 0);
+    margin-top: 60px;
+    margin-left:10px;
+}
+
+
+footer {
+    background: rgb(42, 178, 231) ;
+    color: rgb(12, 11, 11);
+    text-align: center;
+    padding:1rem 0rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
