@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Comentarios</title>
+    <style>
+    
+        header {
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 0;
+            position:relative;
+        }
+
+        .navbar{
+            background: skyblue ;
+            justify-content: space-between;
+            position: absolute;
+            height: cover;
+            width: 100%;
+        }
+
+          
+        .navbar .menu{
+              display: flex;
+              justify-content: space-between;
+              position: relative;
+              margin-left: 40px;
+              margin-right: 300px;
+              text-align: center;
+          
+        }
+          
+        .navbar .menu  li{
+              background: rgb(236, 209, 53);
+              color:black;
+              width: 80px;
+              height: 20px;
+          
+          }
+        .navbar .services-menu{
+            background: rgb(15, 216, 216);
+            filter: blur(0.2px);
+            color:black;
+            display: block;
+            position: absolute;
+          
+              
+             
+        }
+          
+        .menu li .services-menu li{
+            background: rgba(158, 177, 230, 0.7) ;
+            box-shadow: 0 0 10px rgba(0,0,0,0.6);
+            color:rgb(5, 5, 5);
+            width: 80px;
+            height: 20px;
+            font-size: 10px;
+            display:none;
+             
+          
+        }
+        .menu li  .services-menu li a{
+              color:black;
+              font-size: 10px;
+            }
+          
+        .menu li .services-menu li a:hover{
+              color:white;
+              background-color: yellowgreen;
+          }
+          
+        .menu li:hover .services-menu li{
+              display:block;
+          }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            margin-top: 5%;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            height: 150px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        body header .Logo{
+          width:40px;
+          height: 40px;
+          position:relative;
+          
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        
+        
+        <nav class="navbar">
+            
+            <ul class="menu">
+                <img src="Images/logo.png" alt="logo-img" class="Logo">
+                <li><a href="Home.html">Home</a></li>
+                <li>
+                    <a href="services.html">Services</a>
+                    <ul class="services-menu">
+                        <li ><a href="services.html">Green-Activities</a></li>
+                        <li><a href="services.html">Eco-Trends</a></li>
+                        <li><a href="services.html">Sustaniable Life</a></li>
+                        <li><a href="#">Be a Green Solver</a></li>
+                       
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Blog</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Formulario de Comentarios</h1>
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" required></textarea>
+            <input type="submit" value="Enviar Comentario">
+        </form>
+    </div>
+</body>
+</html>
+
